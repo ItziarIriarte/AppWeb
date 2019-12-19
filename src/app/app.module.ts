@@ -5,10 +5,22 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './componentes/home-page/home-page.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { RegisterPageComponent } from './componentes/register-page/register-page.component';
+import { LoginPageComponent } from './componentes/login-page/login-page.component';
+import { AsignacionPageComponent } from './componentes/asignacion-page/asignacion-page.component';
+import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomePageComponent,
+    NavbarComponent,
+    RegisterPageComponent,
+    LoginPageComponent,
+    AsignacionPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
