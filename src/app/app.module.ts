@@ -17,6 +17,9 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {environment} from '../environments/environment';
 import {AuthGuard} from './guards/auth.guard';
+import { HeaderComponent } from './componentes/header/header.component';
+import { PedidosComponent } from './componentes/pedidos/pedidos.component';
+import { RepartidoresComponent } from './componentes/repartidores/repartidores.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {AuthGuard} from './guards/auth.guard';
     RegisterPageComponent,
     LoginPageComponent,
     AsignacionPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    HeaderComponent,
+    PedidosComponent,
+    RepartidoresComponent
   ],
   imports: [
     BrowserModule,
