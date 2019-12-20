@@ -17,8 +17,8 @@ const routes: Routes = [
   {path: 'register', component:RegisterPageComponent},
   {path:'asignacion', component:AsignacionPageComponent, canActivate:[AuthGuard]},
   {path:'**', component: NotFoundPageComponent},
-  {path:'pedido', component:PedidosComponent},
-  {path: 'repartidores', component:RepartidoresComponent}
+  {path:'pedido', component:PedidosComponent, canActivate:[AuthGuard]},
+  {path: 'repartidores', component:RepartidoresComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({
